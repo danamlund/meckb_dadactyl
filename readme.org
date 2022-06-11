@@ -1,0 +1,52 @@
+A qmk keyboard firmware keyboard for my dactyl keyboard.
+
+Example of https://github.com/adereth/dactyl-keyboard. 3d printed without changes, new qmk firmware code.
+
+
+* Tetris
+ - When playing tetris the keyboard is stuck in FN3
+ - Use arrow keys to move/rotate/drop
+ - Press ESC to quit
+* Minesweeper
+ - Use arrow keys to move cursor around
+ - Press d to dig for a mine
+ - Press f to flag square as a mine
+ - Press Esc to quit
+ - 16x16 grid with 40 mines (Intermediate in windows minesweeper)
+* Sudoku
+ - Use arrow keys to move cursor around
+ - Press number to set number
+ - Press 0 to erase set number (pre-set numbers cannot be erased)
+ - Press Esc to quit
+ - Game ends when all numbers set correctly
+ - 151 different boards of "medium" difficulty
+* Basic
+ - [[https://en.wikipedia.org/wiki/Tiny_BASIC][Tiny BASIC]]
+ - [[http://hamsterworks.co.nz/mediawiki/index.php/Arduino_Basic][Arduino Basic / Tiny Basic C by Michael Field and Scott Lawrence]]
+   - Simpler sibling of [[https://github.com/BleuLlama/TinyBasicPlus][TinyBasic Plus]]
+ - Press ESC to break out of infinite loops
+ - Type 'bye' to quit
+ - Ignores movement keys except for backspace
+ - Uses US layout
+ - 1024 bytes memory (866 free after reserved variable storage)
+ - all numbers are float
+ - Executes 1 instruction per 50 ms
+ - When typed keys stop working you are out of memory
+ - Type 'mem' to see memory left
+ - ncurses version in tinybasic_test/
+ - Quick calc: write equation and press enter to calculate
+   - Calls basic, stores result in A, and prints it
+   - Has wrong operator prioritization, so its almost useless
+* Macro
+ - Fn+w to start recording key presses
+ - Fn+e to end recording
+ - Fn+r to replay latest recording
+* keyboard-layout-editor.com
+#+HTML: <a href="http://www.keyboard-layout-editor.com/##@@=Esc%3Cbr//%3E%3Cfont%20color/=blue%3E~%3C//font%3E&=1%20!%3Cbr//%3E%3Cfont%20color/=blue%3EF1%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF11%3C//font%3E&=2%20/@%3Cbr//%3E%3Cfont%20color/=blue%3EF2%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF12%3C//font%3E&=3%20#%3Cbr//%3E%3Cfont%20color/=blue%3EF3%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF13%3C//font%3E&=4%20$%3Cbr//%3E%3Cfont%20color/=blue%3EF4%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF14%3C//font%3E&=5%20%25%3Cbr//%3E%3Cfont%20color/=blue%3EF5%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF15%3C//font%3E&_g:true&a:7;&=&=&=&=&=&_g:false&a:4;&=6%20%5E%3Cbr//%3E%3Cfont%20color/=blue%3EF6%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF16%3C//font%3E&=7%20/&%3Cbr//%3E%3Cfont%20color/=blue%3EF7%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF17%3C//font%3E&=8%20*%3Cbr//%3E%3Cfont%20color/=blue%3EF8%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF18%3C//font%3E&=9%20(%3Cbr//%3E%3Cfont%20color/=blue%3EF9%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF19%3C//font%3E&=0%20)%3Cbr//%3E%3Cfont%20color/=blue%3EF10%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EF20%3C//font%3E&=-%20/_%3Cbr//%3E%3Cfont%20color/=blue%3E/=%20+%3C//font%3E;&@=Tab&=Q%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3ECalc%3C//font%3E&=W%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3ERecord%3C//font%3E&=E%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3EStop%3C//font%3E&=R%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3EReplay%3C//font%3E&=T%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3ETetris%3C//font%3E&_g:true&a:7;&=&=&=&=&=&_g:false&a:4;&=Y&=U&=I%3Cbr//%3E%3Cfont%20color/=blue%3EUp%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EPgUp%3C//font%3E&=O%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3EInsert%3C//font%3E&=P%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3EPrSc%3C//font%3E&=%5B%20%7B%3Cbr//%3E%3Cfont%20color/=blue%3E%5D%20%7D%3C//font%3E;&@=Fn&=A&=S&=D&_n:true;&=F&=G&_h:1.25;&=Fn&_h:1.25;&=Win&_g:true&a:7&h:1.25;&=&_g:false&a:4&h:1.25;&=Menu&_h:1.25;&=Fn&=H&_n:true;&=J%3Cbr//%3E%3Cfont%20color/=blue%3ELeft%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EHome%3C//font%3E&=K%3Cbr//%3E%3Cfont%20color/=blue%3EDown%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EPgDn%3C//font%3E&=L%3Cbr//%3E%3Cfont%20color/=blue%3ERight%3C//font%3E%3Cbr//%3E%3Cfont%20color/=red%3EEnd%3C//font%3E&=/:%20/;&=%22%20'%3Cbr//%3E%3Cfont%20color/=blue%3E%5C%20%7C%3C//font%3E;&@=Z&=X&=C&=V&=B%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3EBasic%3C//font%3E&_h:1.5;&=Shift&_x:5&h:1.5;&=Space&=N&=M%3Cbr//%3E%3Cbr//%3E%3Cfont%20color/=red%3EMines%3C//font%3E&=,%20%3C&=.%20%3E&=?%20//;&@_y:-0.75&x:6&h:1.25;&=Ctrl&_h:1.25;&=Alt&_g:true&a:7&h:1.25;&=&_g:false&a:4&h:1.25;&=Del&_h:1.25;&=Ent">dadactyl layout</a>
+#+BEGIN_EXAMPLE
+["Esc<br/><font color=blue>~</font>","1 !<br/><font color=blue>F1</font><br/><font color=red>F11</font>","2 @<br/><font color=blue>F2</font><br/><font color=red>F12</font>","3 #<br/><font color=blue>F3</font><br/><font color=red>F13</font>","4 $<br/><font color=blue>F4</font><br/><font color=red>F14</font>","5 %<br/><font color=blue>F5</font><br/><font color=red>F15</font>",{g:true,a:7},"","","","","",{g:false,a:4},"6 ^<br/><font color=blue>F6</font><br/><font color=red>F16</font>","7 &<br/><font color=blue>F7</font><br/><font color=red>F17</font>","8 *<br/><font color=blue>F8</font><br/><font color=red>F18</font>","9 (<br/><font color=blue>F9</font><br/><font color=red>F19</font>","0 )<br/><font color=blue>F10</font><br/><font color=red>F20</font>","- _<br/><font color=blue>= +</font>"],
+["Tab","Q<br/><br/><font color=red>Calc</font>","W<br/><br/><font color=red>Record</font>","E<br/><br/><font color=red>Stop</font>","R<br/><br/><font color=red>Replay</font>","T<br/><br/><font color=red>Tetris</font>",{g:true,a:7},"","","","","",{g:false,a:4},"Y","U","I<br/><font color=blue>Up</font><br/><font color=red>PgUp</font>","O<br/><br/><font color=red>Insert</font>","P<br/><br/><font color=red>PrSc</font>","[ {<br/><font color=blue>] }</font>"],
+["Fn","A","S","D",{n:true},"F","G",{h:1.25},"Fn",{h:1.25},"Win",{g:true,a:7,h:1.25},"",{g:false,a:4,h:1.25},"Menu",{h:1.25},"Fn","H",{n:true},"J<br/><font color=blue>Left</font><br/><font color=red>Home</font>","K<br/><font color=blue>Down</font><br/><font color=red>PgDn</font>","L<br/><font color=blue>Right</font><br/><font color=red>End</font>",": ;","\" '<br/><font color=blue>\\ |</font>"],
+["Z","X","C","V","B<br/><br/><font color=red>Basic</font>",{h:1.5},"Shift",{x:5,h:1.5},"Space","N","M<br/><br/><font color=red>Mines</font>",", <",". >","? /"],
+[{y:-0.75,x:6,h:1.25},"Ctrl",{h:1.25},"Alt",{g:true,a:7,h:1.25},"",{g:false,a:4,h:1.25},"Del",{h:1.25},"Ent"]
+#+END_EXAMPLE
