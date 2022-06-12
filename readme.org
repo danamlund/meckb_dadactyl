@@ -19,7 +19,7 @@ Example of https://github.com/adereth/dactyl-keyboard. 3d printed without change
  - Press 0 to erase set number (pre-set numbers cannot be erased)
  - Press Esc to quit
  - Game ends when all numbers set correctly
- - 151 different boards of "medium" difficulty
+ - 10 different boards of "medium" difficulty
 * Basic
  - [[https://en.wikipedia.org/wiki/Tiny_BASIC][Tiny BASIC]]
  - [[http://hamsterworks.co.nz/mediawiki/index.php/Arduino_Basic][Arduino Basic / Tiny Basic C by Michael Field and Scott Lawrence]]
